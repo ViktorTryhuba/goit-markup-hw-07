@@ -1,0 +1,30 @@
+.regular-customers-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular-customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border var(--transition-dur-func);
+    
+    &:hover,
+    &:focus {
+        border: 1px solid var(--hover-color);
+    }
+}
+
+.regular-customers-icon-item {
+    fill: var(--icon-color);
+    transition: fill var(--transition-dur-func);
+
+    .regular-customers-link:hover &,
+    .regular-customers-link:focus & {
+        fill: var(--hover-color);
+    }   
+}
